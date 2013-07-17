@@ -1,0 +1,10 @@
+!!! 5
+%html
+  %head
+    %title 
+      Testapp1
+      = stylesheet_link_tag :all
+      = csrf_meta_tags
+  %body
+    = yield
+    = javascript_include_tag 'application'

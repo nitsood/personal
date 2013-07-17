@@ -1,0 +1,12 @@
+%div.well#div1
+  %h2 Hello!  
+  = form_tag('/search_user', method: 'get') do
+    = label_tag(:q, 'Search for: ')
+    = text_field_tag(:q)
+    = submit_tag('Go')
+  %br
+  = content_for(:output)
+  %br
+  %button#butt1
+  %br
+  %div#placeholder
